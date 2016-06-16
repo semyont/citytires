@@ -73,7 +73,7 @@
     <link rel="apple-touch-icon" sizes="72x72" href="#">
     <link rel="apple-touch-icon" sizes="144x144" href="#">
     <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
-    <link rel="icon" href="favicon.ico" type="image/x-icon">
+    <link rel="icon" href="http://www.citytires.co.il/favicon.ico" type="image/x-icon">
 
     <!-- Modernizr -->
     <script src="_include/js/modernizr.js"></script>
@@ -157,30 +157,22 @@
     <script type="text/javascript"
             src="//translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
 
+
+
+
+
 </head>
 
 <body>
 <!-- Facebook -->
-<script>
-    window.fbAsyncInit = function () {
-        FB.init({
-            appId: '1615895175394461',
-            xfbml: true,
-            version: 'v2.6'
-        });
-    };
-
-    (function (d, s, id) {
-        var js, fjs = d.getElementsByTagName(s)[0];
-        if (d.getElementById(id)) {
-            return;
-        }
-        js = d.createElement(s);
-        js.id = id;
-        js.src = "//connect.facebook.net/en_US/sdk.js";
-        fjs.parentNode.insertBefore(js, fjs);
-    }(document, 'script', 'facebook-jssdk'));
-</script>
+<div id="fb-root"></div>
+<script>(function(d, s, id) {
+    var js, fjs = d.getElementsByTagName(s)[0];
+    if (d.getElementById(id)) return;
+    js = d.createElement(s); js.id = id;
+    js.src = "//connect.facebook.net/en_US/sdk.js#xfbml=1&version=v2.6&appId=1615895175394461";
+    fjs.parentNode.insertBefore(js, fjs);
+}(document, 'script', 'facebook-jssdk'));</script>
 
 <!-- This section is for Splash Screen -->
 <div class="ole">
@@ -225,13 +217,13 @@
             <ul id="menu-nav">
                 <li></li>
                 <li class="current"><a href="#home-slider">בית</a></li>
-                <li><a href="https://www.google.com/maps/dir//הרצל+48+נתניה/">סע עם WAZE  <i class="fa fa-car fa-spin fa-fw"></i></a></li>
+                <li><a onclick="window.location.href='https://www.google.com/maps/dir//הרצל+48+נתניה/'">סע עם WAZE  <i class="fa fa-car fa-spin fa-fw"></i></a></li>
                 <li><a href="#work">עבודות</a></li>
                 <li><a href="#about">עלינו</a></li>
                 <li><a href="#contact">צור קשר</a></li>
                 <li><a href="#map">מפה</a></li>
                 <li><a href="#twit">ציוצים</a></li>
-                <li><div class="fb-like" data-layout="button_count" data-action="like" data-show-faces="true" data-share="true"></div>
+                <li><div class="fb-like" data-href="https://www.facebook.com/citytires.co.il" data-layout="button_count" data-action="like" data-show-faces="true" data-share="true"></div>
                 </li>
 
 
@@ -730,7 +722,7 @@
                     <ul>
                         <li><a href="https://twitter.com/TiresCity" title="Follow Me on Twitter"
                                target="_blank"><span class="font-icon-social-twitter"></span></a></li>
-                        <li><a href="https://www.facebook.com/" title="Follow Me on Facebook"
+                        <li><a href="https://www.facebook.com/citytires.co.il/" title="Follow Me on Facebook"
                                target="_blank"><span class="font-icon-social-facebook"></span></a></li>
 
                     </ul>
@@ -743,7 +735,7 @@
 
 <!-- Footer -->
 <footer>
-    <p class="credits">&copy;2016 <a href="http://facebook.com/semyont" title="צמיגי לב העיר"> Tire City </a> by
+    <p class="credits">&copy;2016 <a href="https://www.facebook.com/citytires.co.il/" title="צמיגי לב העיר"> Tire City </a> by
         <a
                 href="http://facebook.com/semyont"
                 title="Semyon Teplitsky | Engineer &amp; FullStack Developer">Semyon
